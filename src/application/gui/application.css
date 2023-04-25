@@ -1,0 +1,112 @@
+.fondoEstom{
+    -fx-background-color: #B71BCC;
+}
+
+.fondoBarraEstom{
+    -fx-background-color: #48254D;
+}
+
+.estomBoton{
+	-fx-background-color: #7F1D8C;
+	-fx-text-fill: white;
+	-fx-font-family: 'Seoge UI', Arial, sans-serif;
+	-fx-font-size: 13;
+}
+
+.estomBoton:hover{
+	-fx-background-color: #AF44BD;
+}
+
+.btnTransparente{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: 'Seoge UI', Arial, sans-serif;
+    -fx-font-size: 17;
+}
+
+.btnTransparente:hover{
+    -fx-font-weight: 900;
+    -fx-background-color: #7F1D8C;
+    
+}
+
+.btnTransparenteSelect{
+    -fx-font-weight: 900;
+    -fx-background-color: #7F1D8C;
+	-fx-text-fill: white;
+    -fx-font-family: 'Seoge UI', Arial, sans-serif;
+    
+}
+
+.titulogrande{
+	-fx-font-family: 'Seoge UI', Arial, sans-serif;
+	-fx-font-size: 30;
+	-fx-text-fill: white;
+}
+
+.textonormal{
+	-fx-font-family: 'Seoge UI', Arial, sans-serif;
+	-fx-font-size: 13;
+	-fx-text-fill: white;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: #48254D;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-font-family: 'Seoge UI', Arial, sans-serif;
+	-fx-font-size: 18;
+	-fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-font-family: 'Seoge UI', Arial, sans-serif;
+	-fx-font-size: 13;
+	-fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: #BB76C4;
+    -fx-table-cell-border-color: #48254D;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #AF44BD;
+    -fx-table-cell-border-color: #48254D;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3f0566;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}

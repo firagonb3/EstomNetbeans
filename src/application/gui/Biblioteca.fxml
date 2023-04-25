@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1203.0" styleClass="fondoEstom" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.guiControllers.Biblioteca">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="1123.0" spacing="5.0" styleClass="fondoBarraEstom" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Button fx:id="btnTienda" mnemonicParsing="false" onAction="#irTienda" styleClass="btnTransparente" text="TIENDA" />
+            <Button fx:id="btnBiblioteca" mnemonicParsing="false" text="BIBLIOTECA">
+               <styleClass>
+                  <String fx:value="btnTransparenteSelect" />
+                  <String fx:value="btnTransparente" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnComunidad" mnemonicParsing="false" onAction="#irComunidad" styleClass="btnTransparente" text="COMUNIDAD" />
+            <Button fx:id="bntUser" mnemonicParsing="false" onAction="#irUser" styleClass="btnTransparente" text="USERNAME" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="486.0" prefHeight="66.0" prefWidth="80.0" styleClass="fondoBarraEstom" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Circle fx:id="userIcon" fill="WHITE" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="listaJuegos" layoutY="66.0" prefHeight="662.0" prefWidth="301.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="tJuego" prefWidth="75.0" text="JUEGOS" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </TableView>
+      <ImageView fx:id="imgBanner" fitHeight="277.0" fitWidth="904.0" layoutX="300.0" layoutY="66.0" pickOnBounds="true" smooth="false" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="66.0" />
+      <ImageView fx:id="imgLogo" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="182.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="317.0" layoutY="365.0" prefHeight="45.0" prefWidth="830.0" spacing="20.0">
+         <children>
+            <Button fx:id="bntPlay" mnemonicParsing="false" onAction="#jugar" prefHeight="38.0" prefWidth="228.0" text="Jugar" visible="false">
+               <styleClass>
+                  <String fx:value="btnTransparente" />
+                  <String fx:value="btnTransparenteSelect" />
+               </styleClass>
+            </Button>
+            <Label fx:id="lEspacio" styleClass="textonormal" />
+         </children>
+      </HBox>
+      <VBox layoutX="317.0" layoutY="427.0" prefHeight="277.0" prefWidth="830.0">
+         <children>
+            <Label fx:id="lTactulizacion" styleClass="titulogrande" text="Actualizaciones" visible="false">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Label>
+            <Label fx:id="lActulizacion1" styleClass="textonormal" text="--- Juego añadido a Estom" visible="false" />
+            <Label fx:id="lActulizacion2" styleClass="textonormal" text="--- Solucionado bugs" visible="false" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
